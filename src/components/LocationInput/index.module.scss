@@ -1,0 +1,15 @@
+.LocationInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Input {
+        width: 100%;
+        margin-right: 10px;
+    }
+    .IconContainer {
+        min-width: 48px;
+        width: 56px;
+        min-height: 48px;
+        height: 56px;
+    }
+}

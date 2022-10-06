@@ -1,0 +1,30 @@
+.WarningContainer {
+    width: 100%;
+    padding: 18px 0;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid var(--fb-warning-main-color, #f79009);
+    background-color: var(--fb-warning-bg-color, #fef4f7);
+    min-width: 200px;
+
+    .WarningIconWrapper {
+        height: 24px;
+        width: 24px;
+        color: var(--fb-warning-main-color, #f79009);
+        min-width: 50px;
+    }
+    .WarningText {
+        padding: 10px 0;
+        width: 80%;
+        font-size: 14px;
+        color: var(--fb-color-gray-900, #101828);
+    }
+}
+
+@media (max-width: 720px) {
+    .WarningContainer {
+        padding: 20px 15px;
+    }
+}

@@ -1,0 +1,63 @@
+:root {
+    --fb-header-size: #e5e5e5;
+    /** main colors **/
+    --fb-color-black: #101828;
+    --fb--color-black-op30: rgba(26, 26, 26, 0.3);
+    --fb-color-white: #fff;
+    --fb-color-white-100: #fafafa;
+    // grey
+    --fb-color-gray-black: #1a1a1a;
+    --fb-color-gray-900: #101828;
+    --fb-color-gray-800: #1d2939;
+    --fb-color-gray-600: #475467;
+    --fb-color-gray-400: #98a2b3;
+    --fb-color-gray-200: #e4e7ec;
+    --fb-color-gray-100: #f2f4f7;
+    --fb-color-gray-50: #f9fafb;
+    --fb-color-gray-op20: rgba(152, 162, 179, 0.2);
+    --fb-color-gray: rgba(16, 24, 40, 0.1);
+    //green
+    --fb-color-green: #12b76a;
+    --fb-color-green-lighten-55: #e5fff4;
+    // orange-brand
+    --fb-color-main-orange: #fb6514;
+    --fb-color-main-orange-darken-20: #d84e04;
+    --fb-color-main-orange-lighten-20: #fda778;
+    --fb-color-main-orange-lighten-40: #ffefe7;
+    //blue
+    --fb-color-blue: #4e5ba6;
+    --fb-color-skyblue: #2e90fa;
+    --fb-color-skyblue-lighten-40: #f2f9ff;
+    --fb-color-blue-darken-20: #2d3561;
+    --fb-color-blue-lighten-20: #8198cb;
+    //orange
+    --fb-color-orange-light: #f79009;
+    --fb-color-orange-light-lighten-45: #fef4e7;
+    --fb-color-orange-main: #f79009;
+    --fb-color-orange-main-lighten-45: #fef4f7;
+    //red
+    --fb-color-red-light: #f04438;
+    --fb-color-red-dark: #d32f2f;
+    --fb-color-red-light-lighten-40: #fef6f6;
+
+    /** Variables **/
+    --fb-main-color: var(--fb-color-main-orange);
+    --fb-main-color-hover: var(--fb-color-main-orange-darken-20);
+    --fb-main-color-disabled: var(--fb-color--main-orange-lighten-20);
+    --fb-input-border-color: var(--fb-color-gray-200);
+    --fb-input-focus-color: var(--fb-color-main-orange-lighten-20);
+    --fb-input-disable-color: var(--fb-color-gray-200);
+    --fb-error-color: var(--fb-color-red-dark);
+    --fb-warning-main-color: var(--fb-color-orange-main);
+    --fb-warning-bg-color: var(--fb-color-orange-main-lighten-45);
+    --fb-hover-box-shadow-color: var(--fb-color-gray);
+    --fb-success-main-color: var(--fb-color-green);
+    --fb-success-bg-color: var(--fb-color-green-lighten-55);
+}
+
+// todo should be implemented
+@media (prefers-color-scheme: dark) {
+    //:root {
+    //    --fb-main-color: var(--fb-color-blue);
+    //}
+}

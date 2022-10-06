@@ -1,0 +1,10 @@
+.LocationContainer {
+    display: flex;
+    align-items: center;
+    .LocationContainerIcon {
+        flex-shrink: 0;
+        height: 24px;
+        width: 24px;
+        margin-right: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+.InputDatePicker {
+    :global {
+        .MuiFormControl-root {
+            width: 100%;
+        }
+        .MuiOutlinedInput-root {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                border-radius: 16px;
+                color: var(--fb-color-gray-800, #1d2939);
+            }
+            &:hover {
+                .MuiOutlinedInput-notchedOutline {
+                    border-color: var(--fb-input-border-color, #e4e7ec);
+                }
+            }
+        }
+
+        .MuiOutlinedInput-root.Mui-focused {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                box-shadow: 0 8px 16px rgba(16, 24, 40, 0.08);
+            }
+        }
+
+        .MuiFormLabel-root-MuiInputLabel-root {
+            color: var(--fb-color-gray-800, #1d2939);
+        }
+
+        .MuiTouchRipple-root {
+            color: var(--fb-color-main-orange, #fb6514);
+        }
+
+        .MuiInputLabel-root.Mui-focused {
+            color: var(--fb-color-gray-800, #1d2939);
+        }
+
+        .MuiButtonBase-root {
+            width: 43px;
+            height: 43px;
+            &:hover {
+                color: var(--fb-color-main-orange, #fb6514);
+            }
+        }
+    }
+}

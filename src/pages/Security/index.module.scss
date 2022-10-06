@@ -1,0 +1,31 @@
+.Security {
+    width: 70%;
+    margin: 40px;
+    background-color: var(--fb-color-white, #fff);
+
+    .Title {
+        font-weight: 600;
+        color: var(--fb-color-black, #101828);
+    }
+
+    .Wrapper {
+        margin-top: 30px;
+    }
+
+    .ButtonsContainer {
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button:nth-child(1) {
+            margin-right: 16px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .Security {
+        width: 100%;
+        flex-direction: column;
+    }
+}

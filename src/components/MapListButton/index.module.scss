@@ -1,0 +1,25 @@
+.MapListButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Icon {
+        width: 24px;
+        height: 24px;
+        transition: transform 400ms ease-in;
+    }
+
+    .Text {
+        margin-right: 24px;
+        font-size: 16px;
+        color: var(--fb-color-black, #101828);
+    }
+}
+
+.RotateRight {
+    transform: rotateY(180deg);
+}
+
+.RotateLeft {
+    transform: rotateX(180deg);
+}

@@ -1,0 +1,36 @@
+.AdditionalInfo {
+    width: 100%;
+    .TruckImagesInfo {
+        width: 100%;
+        overflow-y: auto;
+    }
+    .Title,
+    .NotesTitle {
+        font-weight: 600;
+        color: var(--fb-color-black, #101828);
+    }
+
+    .NotesTitle {
+        border-top: 1px solid var(--fb-input-border-color, #e4e7ec);
+        padding: 20px 0;
+    }
+
+    .NotesContainer {
+        margin-top: 24px;
+    }
+    .Text {
+        margin-top: 28px;
+        line-height: 24px;
+        width: 95%;
+    }
+    .Row {
+        margin-top: 24px;
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .Row {
+        flex-direction: column;
+    }
+}

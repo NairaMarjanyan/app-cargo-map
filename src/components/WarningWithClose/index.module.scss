@@ -1,0 +1,12 @@
+.WarningWithCloseContainer {
+    position: relative;
+    .WarningWithCloseIconContainer {
+        position: absolute;
+        cursor: pointer;
+        height: 20px;
+        width: 20px;
+        right: 10px;
+        top: 10px;
+        color: var(--fb-warning-main-color, #f79009);
+    }
+}

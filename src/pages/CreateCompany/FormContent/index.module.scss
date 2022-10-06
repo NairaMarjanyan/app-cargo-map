@@ -1,0 +1,62 @@
+.FormContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .CompanyTypeText {
+        font-weight: 600;
+        color: var(--fb-color-black, #101828);
+    }
+
+    .CompanyTypeContainer {
+        width: 90%;
+        overflow: auto;
+    }
+
+    .RadioButtonsContainer {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        background-color: var(--fb-color-white, #fff);
+    }
+
+    .InputsContainer {
+        width: 90%;
+        background-color: var(--fb-color-white, #fff);
+        display: flex;
+        flex-direction: column;
+
+        .InputWrapper {
+            margin-top: 24px;
+            width: 100%;
+        }
+    }
+
+    .UploadFileContainer {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .RegisterCertificate {
+        margin-top: 24px;
+        font-weight: 600;
+        .Asterisk {
+            color: var(--fb-error-color, #f04438);
+            margin-right: 2px;
+        }
+    }
+
+    .FilesUploadContainer {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .CompanyTypeTextContainer {
+        width: 100%;
+    }
+}

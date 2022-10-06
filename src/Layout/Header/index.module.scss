@@ -1,0 +1,99 @@
+.Header {
+    max-width: 100vw;
+    height: 60px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 rgba(82, 85, 102, 0.1);
+
+    .NavLinkContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .MenuContainer {
+            height: 45px;
+            width: 45px;
+            margin-left: 15px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .LogoContainer {
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+
+        .LinksWrapper {
+            width: 200px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+    }
+
+    .IconsWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .IconContainer {
+            width: 48px;
+            height: 48px;
+            margin-left: 20px;
+        }
+
+        .NotificationsWrapper {
+            margin: 0 20px;
+        }
+        .NotificationContainer {
+            position: relative;
+            .NotificationSign {
+                display: none;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                border-radius: 50%;
+                background-color: var(
+                    --fb-color-main-orange-darken-20,
+                    #fb6514
+                );
+            }
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .Header {
+        width: 100%;
+        .NavLinkContainer {
+            .LinksWrapper {
+                display: none;
+            }
+            .MenuContainer {
+                display: block;
+            }
+        }
+        .IconsWrapper {
+            .IconContainer {
+                display: none;
+            }
+            .NotificationsWrapper {
+                display: none;
+            }
+            .NotificationContainer {
+                .NotificationSign {
+                    display: block;
+                }
+            }
+        }
+    }
+}

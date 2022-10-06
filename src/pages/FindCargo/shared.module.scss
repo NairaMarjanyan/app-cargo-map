@@ -1,0 +1,15 @@
+.FindTruck {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    height: calc(100vh - 60px);
+}
+
+.AlertWarningContainer {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    z-index: 800;
+}

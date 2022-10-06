@@ -1,0 +1,38 @@
+.NavLinkWithHoverStyle {
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        height: 100%;
+        box-sizing: border-box;
+        margin-top: 25px;
+        color: var(--fb-color-gray-600, #475467);
+    }
+
+    hr {
+        border: none;
+        height: 2px;
+        margin-top: 18px;
+        width: 12.5%;
+        opacity: 0;
+        will-change: transform;
+        transition: all 200ms ease-out;
+    }
+
+    a:hover + hr {
+        background-color: var(--fb-color-main-orange, #fb6514);
+        color: var(--fb-color-gray-600, #475467);
+        opacity: 1;
+    }
+
+    a.Active + hr {
+        background-color: var(--fb-color-main-orange, #fb6514);
+        color: var(--fb-color-gray-900, #101828);
+        transform: scaleX(5);
+        opacity: 1;
+    }
+}

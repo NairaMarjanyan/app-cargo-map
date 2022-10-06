@@ -1,0 +1,30 @@
+.SideMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
+    .NavMenuContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 24px;
+        .IconWrapper {
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            min-height: 48px;
+            color: var(--fb-color-gray-600, #475467);
+            margin-left: 10px;
+        }
+
+        .TextWrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 12px;
+        }
+    }
+}

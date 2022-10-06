@@ -1,0 +1,54 @@
+.TruckCard {
+    border: 1px solid var(--fb-input-border-color);
+    border-radius: 16px;
+    max-width: 370px;
+    min-width: 370px;
+    padding: 0 16px;
+    background-color: var(--fb-color-white, #ffffff);
+
+    .Header {
+        border-bottom: 1px solid var(--fb-input-border-color, #e4e7ec);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 16px;
+        .HeaderText {
+            font-size: 16px;
+            color: var(--fb-color-black, #101828);
+            line-height: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .Icon {
+            min-width: 92px;
+            height: 40px;
+            width: 92px;
+        }
+    }
+}
+
+.CharacteristicInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+
+    .InfoContainer {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        height: 32px;
+        > div {
+            margin-right: 8px;
+        }
+    }
+    .LogoContainer {
+        height: 32px;
+        width: 32px;
+        cursor: pointer;
+    }
+}
+
+.TruckCard:hover {
+    box-shadow: 0 4px 8px 0 var(--fb-hover-box-shadow-color);
+}

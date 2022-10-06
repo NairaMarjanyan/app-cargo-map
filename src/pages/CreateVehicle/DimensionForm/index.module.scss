@@ -1,0 +1,58 @@
+.DimensionForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .Title {
+        font-size: 16px;
+        color: var(--fb-color-black, #101828);
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+}
+
+.Asterisk {
+    color: var(--fb-error-color, #f04438);
+    margin-right: 2px;
+}
+
+.FormsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    .Row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 24px;
+        div {
+            flex-basis: 32%;
+        }
+    }
+    .RowInput {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 24px;
+        div {
+            flex-basis: 49%;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .DimensionForm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .FormsContainer {
+            width: 100%;
+            .Row {
+                flex-direction: column;
+                div {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

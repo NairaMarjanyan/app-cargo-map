@@ -1,0 +1,18 @@
+.NotificationsBell {
+    position: relative;
+    .Notifications {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: -18%;
+        right: -32%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        background-color: var(--fb-color-main-orange-darken-20, #fb6514);
+        color: var(--fb-color-white, #fff);
+        text-align: center;
+    }
+}

@@ -1,0 +1,26 @@
+.SuccessFrame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--fb-color-white, #fff);
+    .Logo {
+        margin-top: 40px;
+        max-height: 140px;
+        max-width: 200px;
+        color: var(--fb-color-green, #12b76a);
+    }
+    .Title {
+        margin-top: 40px;
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--fb-color-black, #101828);
+    }
+    .Text {
+        margin-top: 40px;
+        width: 80%;
+        text-align: center;
+        color: var(--fb-color-black, #101828);
+        line-height: 24px;
+    }
+}

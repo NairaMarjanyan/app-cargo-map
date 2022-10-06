@@ -1,0 +1,65 @@
+.NavBarContainer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.MapContainer {
+    display: flex;
+    height: calc(100vh - 70px - 60px);
+    position: relative;
+}
+.TrackListContainer {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    z-index: 500;
+    background-color: white;
+    transform: translateX(-100%);
+    transition: transform 400ms ease-in;
+
+    .ToggleViewButton {
+        position: absolute;
+        top: 24px;
+        right: -165px;
+        z-index: 500;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 16px;
+        outline: none;
+        border: 0;
+        background-color: var(--fb-color-white, #fff);
+        cursor: pointer;
+        padding: 12px;
+    }
+    .ToggleViewButton:hover {
+        box-shadow: 0 8px 16px 0 var(--fb-hover-box-shadow-color);
+    }
+}
+
+.TrackListContainer.IsVisible {
+    transform: translateX(0);
+    .ToggleViewButton {
+        width: 48px;
+        right: -65px;
+    }
+    .ToggleViewButton:hover {
+        box-shadow: 0 8px 16px 0 var(--fb-hover-box-shadow-color);
+    }
+}
+
+.DropdownContainer {
+    min-width: 180px;
+}
+.TruckViewContent {
+    height: 100%;
+    width: 100%;
+    background-color: var(--fb-color-white, #fff);
+}
+.FilterContainer {
+    width: 141px;
+    height: 40px;
+}

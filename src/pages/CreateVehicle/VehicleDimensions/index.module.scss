@@ -1,0 +1,37 @@
+.VehicleAdditionalContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .DetailsContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .DetailsContainerText {
+            font-size: 16px;
+            color: var(--fb-color-black, #101828);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.UploadFileContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.RegisterCertificate {
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 600;
+}
+.Asterisk {
+    color: var(--fb-error-color, #f04438);
+    margin-right: 2px;
+}
+
+.FilesUploadContainer {
+    margin-top: 10px;
+    width: 100%;
+}

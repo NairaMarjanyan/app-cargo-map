@@ -1,0 +1,18 @@
+.LocationsContainer {
+    display: flex;
+    border-bottom: 1px solid var(--fb-input-border-color, #e4e7ec);
+    padding: 12px 16px;
+
+    .RouteWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        margin: 0 5px;
+        .Route {
+            width: 75%;
+            border-bottom: 2px dashed var(--fb-color-gray-200, #e4e7ec);
+            height: 2px;
+        }
+    }
+}

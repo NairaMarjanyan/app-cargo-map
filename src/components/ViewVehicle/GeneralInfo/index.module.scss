@@ -1,0 +1,95 @@
+.GeneralInfo {
+    width: 100%;
+    .Title,
+    .CapacityTitle,
+    .TruckTitle,
+    .TrailerTitle {
+        font-weight: 600;
+        margin: 20px 0;
+        color: var(--fb-color-black, #101828);
+        padding-top: 20px;
+    }
+    .CapacityTitle,
+    .TruckTitle {
+        border-top: 1px solid var(--fb-input-border-color, #e4e7ec);
+    }
+
+    .MainInfoContainer,
+    .VehicleInfoContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .InfoBlock {
+            display: flex;
+        }
+    }
+
+    .CapacityContainer {
+        width: 65%;
+        display: flex;
+    }
+    .InfoBlockWithDocuments,
+    .CarInfoBlock {
+        display: flex;
+        padding: 20px 0;
+    }
+
+    .InfoBlockDimensions {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--fb-input-border-color, #e4e7ec);
+        .InfoBlockWrapper {
+            flex: 1;
+        }
+    }
+
+    .Documents {
+        display: flex;
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--fb-color-skyblue, #2e90fa);
+            .PaperIcon {
+                width: 24px;
+                height: 24px;
+                color: var(--fb-color-black, #101828);
+                margin-right: 10px;
+            }
+            p {
+                width: 80px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .CapacityIconContainerInfo {
+        width: 50%;
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    .LogoContainer {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .MainInfoContainer,
+    .VehicleInfoContainer {
+        .InfoBlock,
+        .InfoBlockDimensions,
+        .InfoBlockWithDocuments,
+        .CarInfoBlock {
+            flex-direction: column;
+        }
+    }
+    .CapacityContainer {
+        flex-direction: column;
+    }
+}

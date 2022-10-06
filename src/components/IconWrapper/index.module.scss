@@ -1,0 +1,8 @@
+.IconWrapper {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.IconWrapper:hover {
+    background-color: var(--fb-color-gray-op20, rgba(152, 162, 179, 0.2));
+}

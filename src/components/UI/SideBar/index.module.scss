@@ -1,0 +1,28 @@
+.SideBar {
+    position: fixed;
+    top: 60px;
+    z-index: 500;
+    width: auto;
+    transition: all 200ms ease-in-out;
+    border: 1px solid var(--fb-color-gray-200, #e4e7ec);
+    border-right: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    overflow: hidden;
+    .SideBarContent {
+        box-sizing: border-box;
+        width: auto;
+        height: calc(100vh - 60px - 63px);
+        min-height: calc(100vh - 60px - 63px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 720px) {
+    .SideBar {
+        width: 100%;
+        .SideBarContent {
+            width: 100%;
+        }
+    }
+}

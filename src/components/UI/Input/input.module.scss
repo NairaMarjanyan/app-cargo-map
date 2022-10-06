@@ -1,0 +1,47 @@
+.MuInput {
+    :global {
+        .MuiFormControl-root {
+            width: 100%;
+            background-color: var(--fb-color-white, #fff);
+            border-radius: 16px;
+        }
+
+        .MuiInputBase-input.MuiOutlinedInput-input {
+            border-radius: 16px;
+        }
+
+        .MuiOutlinedInput-root {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                border-radius: 16px;
+                color: var(--fb-color-gray-800, #1d2939);
+            }
+            &:hover {
+                .MuiOutlinedInput-notchedOutline {
+                    border-color: var(--fb-color-gray-400, #98a2b3);
+                }
+            }
+        }
+
+        .MuiOutlinedInput-root.Mui-focused {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-color-gray-400, #98a2b3);
+                //border-color: var(--fb-input-border-color, #e4e7ec);
+                // box-shadow: 0 8px 16px rgba(16, 24, 40, 0.08);
+            }
+        }
+
+        .MuiInputLabel-root.Mui-error,
+        .MuiInputLabel-root.Mui-focused {
+            color: var(--fb-color-gray-800, #1d2939);
+        }
+
+        .MuiInputLabel-asterisk {
+            color: var(--fb-error-color, #f04438);
+        }
+
+        .MuiOutlinedInput-root.Mui-focusVisible {
+            border-radius: 16px;
+        }
+    }
+}

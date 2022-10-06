@@ -1,0 +1,32 @@
+.InfoContainer {
+    width: 720px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 32px 40px 24px 40px;
+}
+.WorningLogo {
+    margin-right: 13px;
+}
+.WorningLogo div {
+    height: 24px;
+    width: 24px;
+}
+.InfoContainerMessage {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+@media (max-width: 740px) {
+    .InfoContainer {
+        width: 100%;
+        display: flex;
+        padding: 32px 16px 24px 16px;
+    }
+    .InfoContainerMessage {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

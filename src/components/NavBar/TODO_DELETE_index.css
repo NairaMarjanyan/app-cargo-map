@@ -1,0 +1,29 @@
+/*---------- Create Item Menu Start ----------*/
+.create-item {
+    color: #fb6514;
+    font-size: 1rem;
+    margin-right: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.create-item_svg {
+    position: absolute;
+    right: 105px;
+    top: 3px;
+    cursor: pointer;
+}
+/*---------- Create Item Menu End ----------*/
+
+/*---------- Create Item Max-Widht = 660 => display has none ----------*/
+@media (max-width: 660px) {
+    .create-item {
+        display: none;
+    }
+}
+/*---------- Nav Menu Max-Widht = 600 => display has none ----------*/
+@media (max-width: 600px) {
+    .nav-menu {
+        display: none;
+    }
+}

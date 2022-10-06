@@ -1,0 +1,58 @@
+.VehicleGeneralFormContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.CategoriesContainerHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    h2 {
+        font-size: 16px;
+        color: var(--fb-color-black, #101828);
+        font-weight: 600;
+        padding-bottom: 28px;
+    }
+    .Required {
+        color: var(--fb-color-main-orange, #fb6514);
+        margin-right: 2px;
+    }
+}
+
+.CategoryCardsContainer {
+    min-width: 150px;
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+}
+
+.FormInput {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.SelectsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 24px;
+    .Selects {
+        width: 49%;
+    }
+}
+
+@media (max-width: 740px) {
+    .VehicleGeneralFormContainer {
+        padding: 10px;
+        .SelectsContainer {
+            flex-direction: column;
+            margin-bottom: 24px;
+            .Selects {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

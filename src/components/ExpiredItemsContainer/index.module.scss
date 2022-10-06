@@ -1,0 +1,27 @@
+.ExpiredItemsContainer {
+    width: 100%;
+    background-color: var(--fb-color-white, #fff);
+
+    .Content {
+        width: 100%;
+        padding: 16px;
+        max-height: 60vh;
+        overflow-y: auto;
+
+        > div {
+            margin: 8px auto;
+        }
+    }
+
+    .ButtonsContainer {
+        width: 94%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .SecondaryButton {
+            margin-right: 8px;
+        }
+    }
+}

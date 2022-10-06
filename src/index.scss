@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400&display=swap");
+@import "styles/react-toastify";
+@import "styles/reset";
+@import "styles/colors";
+@import "styles/leaflet";
+@import "styles/scroll";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*************************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#root > div {
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100%;
+}
+
+#root {
+    /* Base font size */
+    font-size: 16px;
+    font-family: "Zen Kaku Gothic Antique", serif;
+}
+
+/** Generic **/
+.fb-link {
+    font-size: 16px;
+    color: var(--fb-main-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-submit {
+    height: 56px;
+}
+
+.fb-link:hover {
+    font-weight: bold;
+    color: var(--fb-main-color);
+}
+
+.form-input {
+    margin: 24px 0;
+}
+
+.fb-error {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    color: var(--fb-error-color, #d32f2f);
+}
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+/*************************************/

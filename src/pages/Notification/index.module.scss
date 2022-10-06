@@ -1,0 +1,23 @@
+.Notification {
+    width: 50%;
+    margin: 40px;
+    background-color: var(--fb-color-white, #fff);
+
+    .Title {
+        font-weight: 600;
+        color: var(--fb-color-black, #101828);
+    }
+
+    .Text {
+        font-size: 16px;
+        min-width: 150px;
+    }
+
+    .Content {
+        margin-top: 30px;
+        display: flex;
+        line-height: 24px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

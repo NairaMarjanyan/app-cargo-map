@@ -1,0 +1,53 @@
+.NavBar {
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--nav-border-color);
+    height: 64px;
+    padding: 0 24px;
+    user-select: none;
+}
+
+.MobileMenu {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: none;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.QuickFilters {
+    width: 580px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+    .NavBar {
+        padding: 0 8px;
+    }
+
+    .QuickFilters {
+        display: none;
+    }
+
+    .MobileMenu {
+        display: flex;
+    }
+}

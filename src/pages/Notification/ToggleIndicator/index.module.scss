@@ -1,0 +1,37 @@
+.ToggleIndicator {
+    :global {
+        .MuiSwitch-thumb {
+            background-color: var(--fb-color-white, #fff);
+        }
+        .MuiSwitch-root {
+            padding: 4px;
+        }
+        .MuiSwitch-switchBase {
+            color: transparent;
+        }
+        .MuiSwitch-track {
+            background-color: var(--fb-color-main-orange, #fb6514);
+        }
+        .MuiSwitch-track:hover {
+            background-color: red;
+        }
+        .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+            + .MuiSwitch-track {
+            background-color: var(--fb-color-main-orange, #fb6514);
+            opacity: 1;
+            color: transparent;
+        }
+        .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+            color: transparent;
+        }
+        .MuiButtonBase-root {
+            background-color: transparent;
+        }
+        .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase:hover {
+            background-color: transparent;
+        }
+        .css-1yjjitx-MuiSwitch-track {
+            border-radius: 20px;
+        }
+    }
+}

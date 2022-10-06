@@ -1,0 +1,19 @@
+.PasswordInput {
+    position: relative;
+}
+
+.Eye {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--fb-color-gray-400, #98a2b3);
+
+    &:hover {
+        color: var(--fb-color-main-orange, #fb6514);
+    }
+}

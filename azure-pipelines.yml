@@ -1,0 +1,62 @@
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+  branches:
+    include:
+    - master
+    - main
+  paths:
+    exclude:
+      - build
+
+pr: 
+  branches:
+    exclude:
+      - "*"
+
+resources:
+- repo: self
+
+variables:
+  versionPrefix: '1.0.1'
+  versionInitialMinor: 1
+  versionMinor: $[counter(variables['versionInitialMinor'], 1)]
+  version: $(versionPrefix).$(versionMinor)
+  buildName: '$(Build.BuildNumber)_$(Build.Reason)_$(Build.SourceBranchName)'
+  
+  
+stages:
+- stage: Build
+  displayName: Build image
+  jobs:
+  - job: Build
+    displayName: Build
+    pool:
+      vmImage: ubuntu-latest
+    steps:
+    - script: echo '##vso[build.updatebuildnumber]$(version)'
+      displayName: Generate Build Number
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'FlexyByte Docker Registery'
+        repository: 'p/fbc/common/flexybyte/cargomap/app'
+        command: 'buildAndPush'
+        Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        buildContext: '.'
+        tags: '$(version)'
+    - task: Docker@2
+      inputs:
+        containerRegistry: 'FlexyByte Docker Registery'
+        repository: 'p/fbc/common/flexybyte/cargomap/app'
+        command: 'buildAndPush'
+        Dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        buildContext: '.'
+        tags: 'latest'

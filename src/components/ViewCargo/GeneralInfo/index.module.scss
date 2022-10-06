@@ -1,0 +1,39 @@
+.GeneralInfo {
+    width: 100%;
+    .Title,
+    .CargoTitle,
+    .PackingTitle {
+        font-weight: 600;
+        margin: 12px 0;
+        color: var(--fb-color-black, #101828);
+    }
+    .CargoTitle {
+        border-bottom: 1px solid var(--fb-input-border-color, #e4e7ec);
+        padding: 20px 0;
+    }
+    .PackingTitle {
+        border-top: 1px solid var(--fb-input-border-color, #e4e7ec);
+        padding: 20px 0;
+    }
+
+    .MainInfoRow {
+        width: 100%;
+        display: flex;
+    }
+    .Row {
+        width: 75%;
+        display: flex;
+    }
+    .LogoContainer {
+        width: 80%;
+        height: 80%;
+    }
+}
+@media (max-width: 400px) {
+    .Row {
+        flex-direction: column;
+    }
+    .MainInfoRow {
+        flex-direction: column;
+    }
+}

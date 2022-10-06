@@ -1,0 +1,16 @@
+.SecondaryButton {
+    color: var(--fb-color-main-orange, #fb6514);
+    background-color: transparent;
+    border: none;
+}
+.SecondaryButton:disabled {
+    background-color: var(--fb-color-white, #ffffff);
+    color: var(--fb-color-main-orange, #fb6514);
+    cursor: pointer;
+}
+
+.SecondaryButton:hover {
+    background-color: var(--fb-color-gray-100, #f2f4f7);
+    color: var(--fb-color-main-orange, #fb6514);
+    cursor: pointer;
+}

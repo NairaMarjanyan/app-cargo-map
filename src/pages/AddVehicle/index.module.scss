@@ -1,0 +1,35 @@
+.AddVehicle {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.HeaderBack {
+    height: 70px;
+}
+
+.StepsContainer {
+    display: flex;
+    height: 80px;
+
+    .Steps {
+        flex: 1;
+        overflow: hidden;
+    }
+}
+
+.ButtonsContainer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.Content {
+    width: 100%;
+    overflow-x: auto;
+    max-height: calc(90vh - 80px - 80px - 70px);
+    padding: 0 15px;
+}

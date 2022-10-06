@@ -1,0 +1,10 @@
+.RadioButton {
+    :global {
+        .MuiRadio-root {
+            color: var(--fb-color-main-orange, #fb6514);
+        }
+        .MuiTypography-root {
+            width: 200px;
+        }
+    }
+}

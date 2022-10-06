@@ -1,0 +1,33 @@
+.Characteristic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--fb-color-gray-100, #f2f4f7);
+    padding: 4px 8px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+
+    .Progress {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: #e5fff4;
+        z-index: 1;
+    }
+
+    .CharacteristicIcon {
+        height: 24px;
+        width: 24px;
+        z-index: 2;
+        margin-right: 8px;
+    }
+    .CharacteristicText {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: var(--fb-color-black, #101828);
+        z-index: 2;
+    }
+}

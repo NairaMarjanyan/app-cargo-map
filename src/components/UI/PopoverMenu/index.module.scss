@@ -1,0 +1,23 @@
+.PopoverMenu {
+    .PopoverMenuNavLink {
+        min-width: 130px;
+        height: 48px;
+        background-color: transparent;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--fb-color-main-orange-lighten-40, #ffefe7);
+        }
+    }
+    :global {
+        .MuiPaper-root {
+            min-width: 130px;
+            border-radius: 16px;
+            transition: none !important;
+            margin-top: -15px;
+        }
+    }
+}

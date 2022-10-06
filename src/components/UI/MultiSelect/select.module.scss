@@ -1,0 +1,28 @@
+.MuSelect {
+    :global {
+        .MuiOutlinedInput-root {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                border-radius: 16px;
+                color: #1d2939;
+            }
+            &:hover {
+                .MuiOutlinedInput-notchedOutline {
+                    border-color: var(--fb-input-border-color, #e4e7ec);
+                }
+            }
+        }
+        .MuiOutlinedInput-root.Mui-focused {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                box-shadow: 0 8px 16px rgba(16, 24, 40, 0.08);
+            }
+        }
+        .MuiInputLabel-root.Mui-focused {
+            color: #1d2939;
+        }
+        .MuiInputLabel-asterisk {
+            color: var(--fb-error-color, #f04438);
+        }
+    }
+}

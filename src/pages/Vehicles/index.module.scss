@@ -1,0 +1,18 @@
+.Vehicles {
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .Header {
+        margin: 0 10%;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+
+    .DataTable {
+        margin: 0 10%;
+    }
+}

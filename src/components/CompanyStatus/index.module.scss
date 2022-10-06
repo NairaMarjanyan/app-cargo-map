@@ -1,0 +1,32 @@
+.CompanyStatus {
+    min-width: 100px;
+    height: 34px;
+    border-radius: 8px;
+    background-color: var(--fb-color-gray-100, #f2f4f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Dot {
+        height: 6px;
+        width: 6px;
+        min-width: 6px;
+        min-height: 6px;
+        background-color: var(--fb-color-gray-400, #98a2b3);
+        border-radius: 5px;
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.CompanyStatus.Verified {
+    background-color: var(--fb-success-bg-color, #e5fff4);
+    .Dot {
+        background-color: var(--fb-success-main-color, #12b76a);
+    }
+}

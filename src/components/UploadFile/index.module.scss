@@ -1,0 +1,109 @@
+.UploadFile {
+    width: 100%;
+    height: 54px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed var(--fb-color-gray-200, #e4e7ec);
+    box-sizing: border-box;
+    cursor: pointer;
+    color: var(--fb-color-main-orange, #fb6514);
+    margin: 4px 0;
+
+    &.Error {
+        border: 1px solid var(--fb-error-color, #f04438);
+    }
+
+    &:hover {
+        border: 1px dashed var(--fb-color-gray-400, #98a2b3);
+        background-color: var(--fb-color-gray-50, #f9fafb);
+    }
+}
+
+.FileUploadWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    .Container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: auto;
+        .UploadFileLogoContainer {
+            height: 24px;
+            width: 24px;
+            margin-right: 11px;
+        }
+    }
+    .Input {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+
+        button {
+            cursor: pointer;
+        }
+    }
+}
+
+.Dragover {
+    border: 1px dashed var(--fb-color-gray-400, #98a2b3);
+    background-color: var(--fb-color-gray-50, #f9fafb);
+}
+
+.UploadedFile {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    user-select: auto;
+    flex-wrap: wrap;
+    border-radius: 16px;
+    margin-top: 4px;
+    .UploadedFileWrapper {
+        width: 208px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4px;
+        background-color: var(--fb-color-gray-50, #f9fafb);
+        border-radius: 16px;
+        overflow: hidden;
+        padding: 10px;
+        margin-right: 4px;
+        margin-bottom: 4px;
+        .Container {
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .IconContainer {
+                min-width: 24px;
+                min-height: 24px;
+                width: 18px;
+                height: 18px;
+            }
+            p {
+                width: 120px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+        }
+
+        .DeleteSvg {
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.TableContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :global {
+        .MuiTableCell-head {
+            background-color: var(--fb-color-gray-100, #f2f4f7);
+        }
+    }
+    .HeadContainer {
+        display: flex;
+        align-items: center;
+    }
+    .Picture {
+        width: 62px;
+        height: 40px;
+        border-radius: 8px;
+    }
+    .SortIcons {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}

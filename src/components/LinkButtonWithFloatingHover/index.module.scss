@@ -1,0 +1,47 @@
+.LinkButtonWithFloatingHover {
+    padding: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    cursor: pointer;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 16px;
+        height: 100%;
+        box-sizing: border-box;
+        color: var(--fb-color-gray-600, #475467);
+    }
+
+    .BottomOutline {
+        border: none;
+        height: 2px;
+        width: 8px;
+        opacity: 0;
+        will-change: transform;
+        position: absolute;
+        bottom: 0;
+        transition: transform 200ms ease-out;
+    }
+
+    a:hover + .BottomOutline {
+        background-color: var(--fb-color-main-orange, #fb6514);
+        color: var(--fb-color-gray-600, #475467);
+        opacity: 1;
+        bottom: 0;
+    }
+
+    a.Active + .BottomOutline {
+        background-color: var(--fb-color-main-orange, #fb6514);
+        color: var(--fb-color-gray-900, #101828);
+        transform: scaleX(3);
+        opacity: 1;
+        bottom: 0;
+    }
+}

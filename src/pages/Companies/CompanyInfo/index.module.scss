@@ -1,0 +1,112 @@
+.CompanyInfo {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: 1px solid var(--fb-color-gray-200, #e4e7ec);
+    .CompanyContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .LogoContainer {
+        height: 48px;
+        width: 48px;
+        margin-right: 12px;
+    }
+
+    .LogoContainer:hover {
+        background-color: var(--fb-color-gray-100, #f2f4f7);
+        border-radius: 16px;
+    }
+
+    .StatusContainer {
+        display: flex;
+        min-width: 220px;
+        align-items: center;
+        justify-content: space-between;
+        .Title {
+            width: 100%;
+            font-weight: 600;
+            margin: 28px 0;
+            color: var(--fb-color-black, #101828);
+        }
+    }
+    .CompanyData {
+        display: flex;
+        justify-content: space-between;
+        min-width: 300px;
+        .InfoBlock {
+            flex: 1;
+        }
+    }
+
+    .CompanyDataWithFiles {
+        display: flex;
+        justify-content: space-between;
+        min-width: 300px;
+        .InfoBlock {
+            flex: 1;
+        }
+        .DocumentsWrapper {
+            display: flex;
+            flex-flow: row wrap;
+            .UploadedDocuments {
+                display: flex;
+                align-items: center;
+                min-width: 300px;
+                margin-bottom: 5px;
+
+                .IconWrapper {
+                    width: 24px;
+                    height: 24px;
+                    min-width: 24px;
+                    min-height: 24px;
+                    color: var(--fb-color-black, #101828);
+                    margin-right: 8px;
+                }
+            }
+        }
+        a {
+            text-decoration: none;
+            color: var(--fb-color-skyblue, #2e90fa);
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .CompanyInfo {
+        border-bottom: 1px solid var(--fb-color-white, #fff);
+        .StatusContainer {
+            border-bottom: 1px solid var(--fb-color-gray-200, #e4e7ec);
+            .Title {
+                margin-right: 10px;
+            }
+        }
+
+        .CompanyData {
+            width: 100%;
+            flex-direction: column;
+            .InfoBlock {
+                border-bottom: 1px solid var(--fb-color-gray-200, #e4e7ec);
+                margin: 8px 0 8px 0;
+            }
+        }
+        .CompanyDataWithFiles {
+            flex-direction: column;
+            width: 100%;
+
+            .DocumentsWrapper {
+                display: flex;
+                flex-flow: column nowrap;
+
+                .UploadedDocuments {
+                    width: 100%;
+                }
+            }
+            .InfoBlock {
+                border-bottom: 1px solid var(--fb-color-gray-200, #e4e7ec);
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

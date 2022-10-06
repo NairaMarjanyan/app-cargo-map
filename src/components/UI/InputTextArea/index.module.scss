@@ -1,0 +1,49 @@
+.MuiBox {
+    :global {
+        textarea {
+            width: 100%;
+            margin-left: 4px;
+            background-color: transparent;
+            border-radius: 25px;
+            padding: 6px;
+        }
+        .MuiFormControl-root {
+            width: 100%;
+            background-color: var(--fb-color-white, #fff);
+            border-radius: 16px;
+        }
+
+        .MuiOutlinedInput-root {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                border-radius: 16px;
+                color: var(--fb-color-gray-800, #1d2939);
+            }
+            &:hover {
+                .MuiOutlinedInput-notchedOutline {
+                    border-color: var(--fb-input-border-color, #e4e7ec);
+                }
+            }
+        }
+
+        .MuiOutlinedInput-root.Mui-focused {
+            .MuiOutlinedInput-notchedOutline {
+                border-color: var(--fb-input-border-color, #e4e7ec);
+                box-shadow: 0 8px 16px rgba(16, 24, 40, 0.08);
+            }
+        }
+
+        .MuiInputLabel-root.Mui-error,
+        .MuiInputLabel-root.Mui-focused {
+            color: var(--fb-color-gray-800, #1d2939);
+        }
+
+        .MuiInputLabel-asterisk {
+            color: var(--fb-error-color, #f04438);
+        }
+
+        .Mui-error {
+            color: var(--fb-error-color, #f04438);
+        }
+    }
+}

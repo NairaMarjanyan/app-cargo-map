@@ -1,0 +1,38 @@
+.DataTableContainer {
+    max-width: 1200px;
+    width: 100%;
+    :global {
+        .rdt_TableHeadRow {
+            background-color: var(--fb-color-gray-100, #f2f4f7);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}
+.TableContent {
+    width: 100%;
+    :global {
+        .MuiTableCell-head {
+            background-color: var(--fb-color-gray-100, #f2f4f7);
+        }
+    }
+    .HeadContainer {
+        display: flex;
+        align-items: center;
+    }
+    .Picture {
+        width: 62px;
+        height: 40px;
+        border-radius: 8px;
+        img {
+            width: 100%;
+        }
+    }
+    .SortIcons {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+}

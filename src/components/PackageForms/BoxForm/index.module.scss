@@ -1,0 +1,27 @@
+.BoxForm {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    .BoxFormRow {
+        display: flex;
+        margin-bottom: 16px;
+        .FormInput {
+            margin-right: 16px;
+            flex: 1;
+            min-width: 100px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .BoxFormRow {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        .FormInput {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 8px;
+        }
+    }
+}

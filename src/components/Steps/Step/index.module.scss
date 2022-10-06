@@ -1,0 +1,66 @@
+.Step {
+    height: 48px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border: 0;
+    border-bottom: 2px solid var(--fb-color-gray-200, #e4e7ec);
+    cursor: pointer;
+    margin-right: 3px;
+
+    .StepNumber {
+        border: 1px solid var(--fb-color-gray-100, #f2f4f7);
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        margin-left: 16px;
+        background-color: var(--fb-color-gray-100, #f2f4f7);
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .IconWrapper {
+            height: 12px;
+            width: 12px;
+        }
+
+        p {
+            padding-bottom: 2px;
+        }
+    }
+
+    .TextContainer {
+        padding-left: 12px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .StepTitle {
+        font-size: 12px;
+        color: var(--fb-color-gray-400, #98a2b3);
+    }
+
+    .StepText {
+        margin-top: 4px;
+        font-size: 14px;
+        color: var(--fb-color-gray-900, #101828);
+    }
+}
+
+.Step.Active {
+    border-bottom: 2px solid var(--fb-color-main-orange, #fb6514);
+}
+
+.Step.Done {
+    border-bottom: 1px solid var(--fb-color-main-orange, #fb6514);
+}
+
+.Step.Done,
+.Step.Active {
+    .StepNumber {
+        border-color: var(--fb-color-main-orange, #fb6514);
+        color: var(--fb-color-main-orange, #fb6514);
+        background-color: var(--fb-color-white, #fff);
+    }
+}

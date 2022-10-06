@@ -1,0 +1,76 @@
+{
+  "name": "cargo-map",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.2",
+    "@mui/x-date-pickers": "^5.0.0-alpha.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/react-virtualized-auto-sizer": "^1.0.1",
+    "@types/react-window": "^1.8.5",
+    "axios": "^0.26.0",
+    "date-fns": "^2.28.0",
+    "faker": "5.5.3",
+    "leaflet": "^1.7.1",
+    "leaflet-control-geocoder": "^2.4.0",
+    "leaflet.markercluster": "^1.5.3",
+    "react": "^17.0.2",
+    "react-data-table-component": "^7.5.0",
+    "react-device-detect": "^2.2.2",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^12.0.4",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-select": "^5.2.2",
+    "react-toastify": "^9.0.0",
+    "react-verification-code-input": "^1.2.9",
+    "react-virtualized-auto-sizer": "^1.0.6",
+    "react-window": "^1.8.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.1",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --passWithNoTests --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "npm run format:fix && eslint . && npm run test",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check \"**/*.{js,css,scss,html}\"",
+    "format:fix": "prettier --write \"**/*.{js,css,scss,html}\"",
+    "fix": "npm run lint:fix && npm run format:fix",
+    "check-branches": "git-branch-is -r \"^(?!(dev|main|master|stg|tst|prd)$).*\"",
+    "lint-staged": "lint-staged --no-stash"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@flexybyte/linter": "^1.0.2",
+    "@types/react-redux": "^7.1.24",
+    "sass": "^1.49.7"
+  }
+}
